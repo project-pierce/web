@@ -48,7 +48,7 @@ img {
 }
 
 details img {
-    width:33%;
+    width:50%;
 }
 
 ul li a:hover:not(.active) {
@@ -90,6 +90,14 @@ footer {
         margin-right:10%;
         margin-left:10%;
     }
+
+    img {
+        width:100%;
+    }
+
+    details img {
+        width:60%;
+    }
 }
 
 /* Phone */
@@ -108,7 +116,7 @@ footer {
         margin:0;
     }
 
-    img {
+    details img {
         width:100%;
     }
 }
