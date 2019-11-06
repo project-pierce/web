@@ -8,6 +8,6 @@ cp *.html releases/$version/
 cp *.css releases/$version/
 cp -r images releases/$version/
 rm -rf releases/$version/images/src
-# cp report.md.pdf releases/$version/report.pdf
+cp report-$version.md.pdf releases/$version/report.pdf
 cd releases/$version
 7z a $1.zip *
