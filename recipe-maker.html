@@ -4,6 +4,7 @@
         <meta charset=utf-8 />
         <title>Project Pierce | Recipe Maker</title>
         <link rel=stylesheet href=style.css>
+        <script src=recipe-maker.js></script>
     </head>
     <body>
         <nav>
@@ -18,34 +19,31 @@
             </ul>
         </nav>
         <main>
-            <p>
-                <label>Select the meal of your recipe:</label>
-                <select name=meal>
-                    <option>Breakfast</option>
-                    <option>Lunch</option>
-                    <option>Dinner</option>
-                    <option>Snacks</option>
-                    <option>Stir-Fry</option>
-                    <option>Beverages</option>
-                </select>
-            </p>
-            <p>
-                <input class=text-input type=text name=recipe-name placeholder="Put the name of your recipe" />
-            </p>
-            <p>
-            <textarea>
-                Put the description of your recipe
-            </textarea>
-            </p>
-            <label>What are some specifics about your recipe?</label>
-            <p><input type=checkbox name=spec value=halal>Halal</p>
-            <p><input type=checkbox name=spec value=halal>Vegan</p>
-            <p><input type=checkbox name=spec value=halal>Gluten-free</p>
             <form method=post enctype=multipart/form-data>
-                <label>Upload a picture of your recipe</label>
-                <input type=file name=photo />
+                <p>
+                    <label>Recipe Meal/Type:</label>
+                    <select name=meal>
+                        <option>Breakfast</option>
+                        <option>Lunch</option>
+                        <option>Dinner</option>
+                        <option>Snacks</option>
+                        <option>Stir-Fry</option>
+                        <option>Beverages</option>
+                    </select>
+                </p>
+                <p><input class=text-input type=text name=recipe-name placeholder="Put the name of your recipe" /></p>
+                <p><label>Recipe Description:</label></p>
+                <p><textarea></textarea></p>
+                <p><label>What are some specifics about your recipe?</label></p>
+                <p><input type=checkbox name=spec value=halal>Halal</p>
+                <p><input type=checkbox name=spec value=vegan>Vegan</p>
+                <p><input type=checkbox name=spec value=gluten-free>Gluten-free</p>
+                <p><input type=checkbox name=spec value=keto>Keto</p>
+                <p><label>Upload a picture of your recipe:</label></p>
+                <p><input type=file accept="image/*" onchange="showImage(event)" /></p>
+                <img id="previewImage"/>
+                <p><input id=submitRecipe type=submit /></p>
             </form>
-            <input type=submit />
         </main>
     </body>
 </html>

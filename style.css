@@ -63,6 +63,15 @@ footer {
     text-align:center;
 }
 
+.text-input {
+    width:200%;
+}
+
+textarea {
+    width:200%;
+}
+
+
 /* Desktop */
 @media only screen and (min-width:999px) {
     main {
@@ -73,14 +82,6 @@ footer {
 
     ul li a {
         border-bottom:1px solid white;
-    }
-
-    .text-input {
-        width:120%;
-    }
-    
-    textarea {
-        width:120%;
     }
 
 }
@@ -114,6 +115,14 @@ footer {
 
     details img {
         width:60%;
+    }
+
+    .text-input {
+        width:100%;
+    }
+    
+    textarea {
+        width:100%;
     }
 }
 
