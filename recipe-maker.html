@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset=utf-8 />
+        <title>Project Pierce | Recipe Maker</title>
+        <link rel=stylesheet href=style.css>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href=index.html>&#127968; Home</a></li>
+                <li><a href=breakfast.html>Breakfast</a></li>
+                <li><a href=lunch.html>Lunch</a></li>
+                <li><a href=dinner.html>Dinner</a></li>
+                <li><a href=snacks.html>Snacks</a></li>
+                <li><a href=stir-fry.html>Stir-Fry</a></li>
+                <li><a href=beverages.html>Beverages</a></li>
+            </ul>
+        </nav>
+        <main>
+            <p>
+                <label>Select the meal of your recipe:</label>
+                <select name=meal>
+                    <option>Breakfast</option>
+                    <option>Lunch</option>
+                    <option>Dinner</option>
+                    <option>Snacks</option>
+                    <option>Stir-Fry</option>
+                    <option>Beverages</option>
+                </select>
+            </p>
+            <p>
+                <input class=text-input type=text name=recipe-name placeholder="Put the name of your recipe" />
+            </p>
+            <p>
+            <textarea>
+                Put the description of your recipe
+            </textarea>
+            </p>
+            <label>What are some specifics about your recipe?</label>
+            <p><input type=checkbox name=spec value=halal>Halal</p>
+            <p><input type=checkbox name=spec value=halal>Vegan</p>
+            <p><input type=checkbox name=spec value=halal>Gluten-free</p>
+            <form method=post enctype=multipart/form-data>
+                <label>Upload a picture of your recipe</label>
+                <input type=file name=photo />
+            </form>
+            <input type=submit />
+        </main>
+    </body>
+</html>
+<!--
+I pledge my honor that I have abided by the Stevens Honor System.
+Madison Gaudet
+Tyler Kaminski
+Lasya Josyula
+Anushtup Bhowmik
+Cindy Zhang
+-->

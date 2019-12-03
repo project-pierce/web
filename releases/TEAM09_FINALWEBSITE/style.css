@@ -74,15 +74,6 @@ footer {
     ul li a {
         border-bottom:1px solid white;
     }
-
-    .text-input {
-        width:120%;
-    }
-    
-    textarea {
-        width:120%;
-    }
-
 }
 
 /* Tablet */
