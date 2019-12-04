@@ -1,6 +1,7 @@
-function showImage() {
-    document.getElementById('previewImage').src = window.URL.createObjectURL(this.files[0])"
-}
+function showImage(event) {
+    previewImage = document.getElementById("previewImage");
+    previewImage.src = URL.createObjectURL(event.target.files[0]);
+};
 
 function displayNewRecipe() {
     meal = "Meal: " + document.getElementById('meal').value + "<br>"
