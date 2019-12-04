@@ -19,10 +19,10 @@
             </ul>
         </nav>
         <main>
-            <form method=post enctype=multipart/form-data>
+            <form method=post enctype=multipart/form-data onsubmit=displayNewRecipe()>
                 <p>
                     <label>Recipe Meal/Type:</label>
-                    <select name=meal>
+                    <select id=meal>
                         <option>Breakfast</option>
                         <option>Lunch</option>
                         <option>Dinner</option>
@@ -31,7 +31,7 @@
                         <option>Beverages</option>
                     </select>
                 </p>
-                <p><input class=text-input type=text name=recipe-name placeholder="Put the name of your recipe" /></p>
+                <p><input class=text-input type=text id=recipe-name placeholder="Put the name of your recipe" /></p>
                 <p><label>Recipe Description:</label></p>
                 <p><textarea></textarea></p>
                 <p><label>What are some specifics about your recipe?</label></p>
@@ -42,16 +42,10 @@
                 <p><label>Upload a picture of your recipe:</label></p>
                 <p><input type=file accept="image/*" onchange="showImage(event)" /></p>
                 <img id="previewImage"/>
+                <p><input value="Preview Recipe" type=button onclick=displayNewRecipe()/></p>
                 <p><input id=submitRecipe type=submit /></p>
+                <p><span id=preview></span></p>
             </form>
         </main>
     </body>
 </html>
-<!--
-I pledge my honor that I have abided by the Stevens Honor System.
-Madison Gaudet
-Tyler Kaminski
-Lasya Josyula
-Anushtup Bhowmik
-Cindy Zhang
--->

@@ -4,6 +4,7 @@
         <meta charset=utf-8 />
         <title>Project Pierce | Breakfast</title>
         <link rel=stylesheet href=style.css>
+        <script src=show-recipe.js></script>
     </head>
     <body>
         <nav>
@@ -19,14 +20,14 @@
         </nav>
         <main>
             <div>
-                <details>
+                <details onmouseover=showRecipe(this)>
                     <summary>Pomegranate & Cranberry Energy Balls</summary>
                     <figure>
                         <img src=images/energy-balls.jpg alt="Energy Balls">
                         <figcaption>Compact, yet dense balls of pomegranate and cranberry to start your day.</figcaption>
                     </figure>
                 </details>
-                <details>
+                <details onmouseover=showRecipe(this)>
                     <summary>Scrambled Eggs</summary>
                     <figure>
                         <img src=images/eggs.jpg alt=Eggs>

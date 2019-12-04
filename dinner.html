@@ -4,6 +4,7 @@
         <meta charset=utf-8 />
         <title>Project Pierce | Dinner</title>
         <link rel=stylesheet href=style.css>
+        <script src=show-recipe.js></script>
     </head>
     <body>
         <nav>
@@ -19,14 +20,14 @@
         </nav>
         <main>
             <div>
-                <details>
+                <details onmouseover=showRecipe(this)>
                     <summary>Grilled Chicken and Feta Cheese Salad</summary>
                     <figure>
                         <img src=images/chicken.jpg alt=Chicken>
                         <figcaption>Load up a salad with grilled chicken, feta cheese, olives, almonds, as well as balsamic vinegarette, or any other dressing of your choosing.</figcaption>
                     </figure>
                 </details>
-                <details>
+                <details onmouseover=showRecipe(this)>
                     <summary>Yuca Fries</summary>
                     <figure>
                         <img src=images/yuca.jpg alt=Yuca>
