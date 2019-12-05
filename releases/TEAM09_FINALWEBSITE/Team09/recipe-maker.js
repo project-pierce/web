@@ -1,16 +1,16 @@
 function showImage(event) {
     previewImage = document.getElementById("previewImage");
     previewImage.src = URL.createObjectURL(event.target.files[0]);
-};
+}
 
 function displayNewRecipe() {
-    meal = "Meal: " + document.getElementById('meal').value + "<br>"
+    meal = "<h1>" + document.getElementById('meal').value + "</h1>"
     recipe_name = document.getElementById('recipe-name').value + "<br>"
     recipe_desc = document.getElementById('recipe-desc').value + "<br>"
     recipe_specs = ""
-    for (var i=0;i<document.getElementsByClassName("spec").length;i++){
-        if (document.getElementsByClassName("spec")[i].checked){
-            recipe_specs += document.getElementsByClassName("spec")[i].value + " "
+    for (var check=0;check<document.getElementsByClassName("spec").length;check++){
+        if (document.getElementsByClassName("spec")[check].checked){
+            recipe_specs += document.getElementsByClassName("spec")[check].value + " "
         }
     }
     

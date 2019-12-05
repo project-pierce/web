@@ -11,7 +11,7 @@ p {
 
 h1 {
     background-color:white;
-    margin-right:60%;
+    margin-right:30%;
     border:1px solid purple;
     padding:5px;
     text-align:center;
@@ -71,6 +71,9 @@ textarea {
     width:200%;
 }
 
+#previewImage {
+    max-width:30%;
+}
 
 /* Desktop */
 @media only screen and (min-width:999px) {

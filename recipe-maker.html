@@ -42,8 +42,8 @@
                 <p><input type=checkbox class=spec value=Gluten-free>Gluten-free</p>
                 <p><input type=checkbox class=spec value=Keto>Keto</p>
                 <p><label>Upload a picture of your recipe:</label></p>
-                <p><input type=file onchange="showImage()" /></p>
-                <img width=50 height=50 id="previewImage"/>
+                <p><input type=file onchange="showImage(event)" /></p>
+                <img id="previewImage"/>
                 <p><input value="Preview Recipe" type=button onclick="displayNewRecipe()" /></p>
                 <p><input id=submitRecipe type=submit /></p>
                 <p><span id=preview></span></p>
